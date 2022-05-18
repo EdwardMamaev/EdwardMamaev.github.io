@@ -1,0 +1,214 @@
+body {
+	background: #141414;
+	margin: 0%;
+}
+.block {
+  width: 100%;
+  height: 50px; 
+  background: #1c1c1c;
+  position: absolute;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.logo {
+  width: 150px;
+  top: -15px;
+  left: 9px;
+  color: white;
+  position: absolute;
+  filter: invert(1);
+}
+#button {
+  display: none;
+}
+.button-design {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 6px;
+}
+.button-work {
+  position: absolute;
+  top: -5.5px;
+  right: -2px;
+  width: 40px;
+  height: 45px;
+  background-color: #141414;
+  margin: 0px;
+  opacity: 0;
+}
+.list {
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  right: -360px;
+  background: #141414;
+  transition: all 0.5s;   
+  width: 320px;
+  height: 100vh;
+  padding: 18px 20px;
+  font-family: 'Work Sans', sans-serif;
+  color: #FFF;
+  font-size: 10px;
+  line-height: 18px; 
+}
+.button-open {
+	padding: 0%;
+	top: 6.5px;
+	right: 3.7px;
+	position: absolute;
+}
+.close-button {
+  transition: all 280ms ease-in-out;
+}
+.close-button-design-left {
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 0.1px;
+  transform: rotate(45deg);
+}
+.close-button-design-right {
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  width: 25px;
+  height: 3px;
+  margin: 0.1px;
+  background-color: white;
+  transform: rotate(-45deg);
+}
+#button:checked + .list{
+  display: block;
+}
+#button:checked + .list {
+    right:0;
+}
+.links {
+	color: #FAFAFA;
+	font-weight: bold;
+	font-size: 180%; 
+	text-decoration: none;
+	list-style-type: none;
+}
+li {
+	list-style-type: none;
+}
+ul {
+	margin-left: 0;
+	padding-left: 0;
+}
+.content {
+  overflow: relative;
+  padding: 5px;
+  border-radius: 10px; 
+  padding: 20px;
+  background: rgba(52, 52, 52, 0.4);
+  border-radius: 16px;
+  backdrop-filter: blur(9.1px); -webkit-backdrop-filter: blur(9.1px);
+  border: 1px solid rgba(52, 52, 52, 1);
+  font-family: 'Work Sans', sans-serif;
+  color: #FFF;
+  font-size: 50px;
+}
+.position {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  right: 20px;
+  bottom: 30px;
+}
+@media (max-width: 459px) {
+  .layuot {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.layuot {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  grid-auto-flow: dense;
+}
+.block0 {
+  grid-column: span 2;
+  grid-row: span 12;
+  padding: 5px;
+  border-radius: 10px; 
+  padding: 20px;
+  background: rgba(52, 52, 52, 0.4);
+  border-radius: 16px;
+  backdrop-filter: blur(9.1px); -webkit-backdrop-filter: blur(9.1px);
+  border: 1px solid rgba(52, 52, 52, 1);
+}
+.block1 {
+  background: white;
+  grid-column: span 2;
+  grid-row: span 12;
+  color: #FFF;
+  padding: 5px;
+  border-radius: 10px; 
+  padding: 20px;
+  background: rgba(52, 52, 52, 0.4);
+  border-radius: 16px;
+  backdrop-filter: blur(9.1px); -webkit-backdrop-filter: blur(9.1px);
+  border: 1px solid rgba(52, 52, 52, 1);
+}
+.block2 {
+  background: white;
+  grid-column: span 2;
+  grid-row: span 12;
+  color: #FFF;
+  padding: 5px;
+  border-radius: 10px; 
+  padding: 20px;
+  background: rgba(52, 52, 52, 0.4);
+  border-radius: 16px;
+  backdrop-filter: blur(9.1px); -webkit-backdrop-filter: blur(9.1px);
+  border: 1px solid rgba(52, 52, 52, 1);
+}
+.block3 {
+  background: white;
+  grid-column: span 2;
+  grid-row: span 12;
+  color: #FFF;
+  border-radius: 10px; 
+  padding: 20px;
+  background: rgba(52, 52, 52, 0.4);
+  border-radius: 16px;
+  backdrop-filter: blur(9.1px); -webkit-backdrop-filter: blur(9.1px);
+  border: 1px solid rgba(52, 52, 52, 1);
+}
+.textlabel {
+  font-family: 'Work Sans', sans-serif;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 550;
+  text-align: center;
+  margin: 0em 0em 1em 0em;
+  font-weight: 550;
+}
+.text {
+  font-family: 'Work Sans', sans-serif;
+  color: #FFF;
+  font-size: 20px;
+  text-align: justify;
+  margin: 1em 0em 0em 0em;
+  font-weight: 550;
+}
+.images {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px; 
+
+  position: block;
+  height: auto;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+  border-radius: 10px; 
+}
